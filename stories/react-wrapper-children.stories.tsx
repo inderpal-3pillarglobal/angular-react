@@ -41,7 +41,7 @@ export default {
     moduleMetadata({
       imports: [CommonModule, AngularReactModule],
       declarations: [OuterAngularComponent],
-      providers: [ChangeDetectorRef, { provide: APP_BASE_HREF, useValue: "/" }],
+      providers: [{ provide: APP_BASE_HREF, useValue: "/" }],
     }),
   ],
 } as Meta;

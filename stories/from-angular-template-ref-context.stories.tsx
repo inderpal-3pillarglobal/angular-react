@@ -115,7 +115,7 @@ export default {
     moduleMetadata({
       imports: [CommonModule, AngularReactModule],
       declarations: [OuterComponent, InnerComponent, Inner2Component],
-      providers: [ChangeDetectorRef, { provide: APP_BASE_HREF, useValue: "/" }],
+      providers: [{ provide: APP_BASE_HREF, useValue: "/" }],
     }),
   ],
 } as Meta;

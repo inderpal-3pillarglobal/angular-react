@@ -4,11 +4,17 @@ module.exports = {
     "../stories/**/*.stories.mdx",
     "../stories/**/*.stories.@(js|jsx|ts|tsx)"
   ],
+
   "addons": [
     "@storybook/addon-essentials"
   ],
-  "framework": "@storybook/angular",
-  "core": {
-    "builder": "@storybook/builder-webpack5"
+
+  "framework": {
+    name: "@storybook/angular",
+    options: {}
+  },
+
+  docs: {
+    autodocs: true
   }
 }
